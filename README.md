@@ -1,2 +1,2 @@
 #To Play
-[click here](https://rpg-game-q9fw3y7vx-azlanehs-projects.vercel.app/)
+[click here](https://rpg-game-qsu6.vercel.app/)
