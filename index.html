@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+
     <title>RPG GAME</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <canvas id="gameScreen" width="320" height="180"></canvas>
+  <body class="bg-gray-900 w-dvw h-dvh">
+    <canvas
+      id="gameScreen"
+      class="w-full relative z-10 h-fit portrait:hidden"
+      width="320"
+      height="180"
+    >
+    </canvas>
+    <div
+      id="baseLayer"
+      class="flex justify-center items-center absolute z-0 w-full h-full landscape:hidden"
+    >
+      <div class="rotate-90 text-gray-500 text-3xl font-extrabold">
+        Rolate your Phone
+      </div>
+    </div>
+    <div id="controlLeyer" class="w-full relatisve z-20">
+      <di
+        id="controler"
+        class="h-24 w-24 absolute z-30 left-10 bottom-10 grid gap-4 grid-cols-2 rotate-45 portrait:hidden lg:hidden md:hidden xl:hidden"
+      >
+        <button
+          id="controlerU"
+          class="-rotate-45 p-2 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer flex items-center justify-center"
+        >
+          <i class="ri-arrow-up-s-line text-white"></i>
+        </button>
+        <button
+          id="controlerR"
+          class="-rotate-45 p-2 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer flex items-center justify-center"
+        >
+          <i class="ri-arrow-right-s-line text-white"></i>
+        </button>
+        <button
+          id="controlerL"
+          class="-rotate-45 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer flex items-center justify-center"
+        >
+          <i class="ri-arrow-left-s-line text-white"></i>
+        </button>
+        <button
+          id="controlerD"
+          class="-rotate-45 p-2 bg-gray-700 hover:bg-gray-600 rounded-lg cursor-pointer flex items-center justify-center"
+        >
+          <i class="ri-arrow-down-s-line text-white"></i>
+        </button>
+      </di>
+    </div>
 
     <script type="module" src="main.js"></script>
   </body>

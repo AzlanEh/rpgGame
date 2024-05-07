@@ -85,7 +85,6 @@ const movementDirection = () => {
     heroDestinationPosition.y = nextY;
   }
 };
-
 const draw = () => {
   // Draw game elements on the canvas
   skySprite.drawImage(ctx, 0, 0);
